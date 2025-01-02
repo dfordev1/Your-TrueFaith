@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dawah Organization</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            line-height: 1.6;
+            color: #000;
+            background: #fff;
+        }
+
+        .header {
+            padding: 1.5rem;
+            border-bottom: 1px solid #eee;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: #000;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 6rem 1rem;
+            border-bottom: 1px solid #eee;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            border: 2px solid #000;
+            color: #000;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            margin-top: 2rem;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 4rem 1rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .feature-card {
+            padding: 2rem;
+            border: 1px solid #eee;
+            text-align: center;
+        }
+
+        .footer {
+            padding: 2rem;
+            text-align: center;
+            border-top: 1px solid #eee;
+        }
+
+        @media (max-width: 768px) {
+            .nav {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            .nav-links {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <h2>Dawah Organization</h2>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#resources">Resources</a>
+                <a href="#events">Events</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Sharing Knowledge, Building Bridges</h1>
+        <p>Join us in our mission to foster understanding and spiritual growth</p>
+        <a href="#join" class="cta-button">Get Involved</a>
+    </section>
+
+    <section class="features">
+        <div class="feature-card">
+            <h3>Learn</h3>
+            <p>Access authentic Islamic knowledge through our comprehensive educational resources.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Connect</h3>
+            <p>Join our welcoming community and engage in meaningful dialogue.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Grow</h3>
+            <p>Develop your understanding and strengthen your spiritual journey.</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 Dawah Organization</p>
+    </footer>
+</body>
+</html>
