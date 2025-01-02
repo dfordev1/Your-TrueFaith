@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dawah Organization</title>
+    <title>Dawah Travels</title>
     <style>
         * {
             margin: 0;
@@ -20,155 +20,171 @@
 
         .header {
             padding: 1.5rem;
-            border-bottom: 1px solid #ddd;
-            background: #fff;
+            background: #007BFF;
+            color: #fff;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+        }
+
+        .header p {
+            font-size: 1rem;
         }
 
         .nav {
             display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .nav-links {
-            display: flex;
+            justify-content: center;
             gap: 2rem;
+            margin-top: 1rem;
         }
 
-        .nav-links a {
-            color: #333;
+        .nav a {
+            color: #fff;
             text-decoration: none;
             font-weight: 500;
             transition: color 0.3s ease;
         }
 
-        .nav-links a:hover {
-            color: #007BFF;
+        .nav a:hover {
+            color: #FFD700;
         }
 
         .hero {
+            background: url('https://via.placeholder.com/1500x800') no-repeat center center/cover;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             text-align: center;
-            padding: 6rem 1rem;
-            border-bottom: 1px solid #ddd;
-            background: linear-gradient(to bottom, #007BFF, #0056b3);
             color: #fff;
+            padding: 2rem;
         }
 
-        .hero h1 {
-            font-size: 2.8rem;
+        .hero h2 {
+            font-size: 2.5rem;
             margin-bottom: 1rem;
         }
 
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
         .cta-button {
-            display: inline-block;
-            border: 2px solid #fff;
-            color: #fff;
+            background: #FFD700;
+            color: #333;
             padding: 1rem 2rem;
             text-decoration: none;
-            margin-top: 2rem;
-            transition: background 0.3s ease, color 0.3s ease;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background 0.3s ease;
         }
 
         .cta-button:hover {
-            background: #fff;
-            color: #007BFF;
+            background: #FFC107;
         }
 
         .features {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
             padding: 4rem 1rem;
             max-width: 1200px;
             margin: 0 auto;
         }
 
+        .features h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+            color: #007BFF;
+        }
+
+        .feature-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
         .feature-card {
             padding: 2rem;
             border: 1px solid #ddd;
-            text-align: center;
             background: #fff;
-            transition: transform 0.3s ease;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         .feature-card:hover {
-            transform: translateY(-5px);
+            transform: translateY(-10px);
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
+        .feature-card h3 {
+            color: #007BFF;
+            margin-bottom: 1rem;
+        }
+
         .footer {
+            background: #007BFF;
+            color: #fff;
             padding: 2rem;
             text-align: center;
-            border-top: 1px solid #ddd;
-            background: #f1f1f1;
         }
 
         .footer p {
             margin-bottom: 1rem;
         }
 
-        .social-icons {
+        .footer .social-icons {
             display: flex;
             justify-content: center;
             gap: 1rem;
         }
 
         .social-icons a {
-            text-decoration: none;
-            color: #333;
+            color: #fff;
             font-size: 1.5rem;
+            text-decoration: none;
         }
 
         .social-icons a:hover {
-            color: #007BFF;
-        }
-
-        @media (max-width: 768px) {
-            .nav {
-                flex-direction: column;
-                gap: 1rem;
-            }
-
-            .nav-links {
-                flex-direction: column;
-                align-items: center;
-            }
+            color: #FFD700;
         }
     </style>
 </head>
 <body>
     <header class="header">
+        <h1>Dawah Organization</h1>
+        <p>Spreading knowledge, love, and understanding across the globe</p>
         <nav class="nav">
-            <h2 aria-label="Dawah Organization">Dawah Organization</h2>
-            <div class="nav-links">
-                <a href="#about">About</a>
-                <a href="#resources">Resources</a>
-                <a href="#events">Events</a>
-                <a href="#contact">Contact</a>
-            </div>
+            <a href="#about">About</a>
+            <a href="#mission">Mission</a>
+            <a href="#destinations">Destinations</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
 
     <section class="hero">
-        <h1>Sharing Knowledge, Building Bridges</h1>
-        <p>Join us in our mission to foster understanding and spiritual growth</p>
-        <a href="#join" class="cta-button">Get Involved</a>
+        <h2>Take Dawah to Every Corner of the World</h2>
+        <p>Join us in sharing the message of peace, unity, and understanding.</p>
+        <a href="#join" class="cta-button">Join Our Mission</a>
     </section>
 
     <section class="features">
-        <div class="feature-card">
-            <h3>Learn</h3>
-            <p>Access authentic Islamic knowledge through our comprehensive educational resources.</p>
-        </div>
-        <div class="feature-card">
-            <h3>Connect</h3>
-            <p>Join our welcoming community and engage in meaningful dialogue.</p>
-        </div>
-        <div class="feature-card">
-            <h3>Grow</h3>
-            <p>Develop your understanding and strengthen your spiritual journey.</p>
+        <h2>Our Global Impact</h2>
+        <div class="feature-cards">
+            <div class="feature-card">
+                <h3>Community Engagement</h3>
+                <p>Connecting with communities through events, workshops, and cultural exchange.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Educational Resources</h3>
+                <p>Providing authentic Islamic knowledge to foster understanding and spirituality.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Global Destinations</h3>
+                <p>Traveling to cities and villages worldwide to spread the message of unity.</p>
+            </div>
         </div>
     </section>
 
@@ -179,6 +195,7 @@
             <a href="#twitter" aria-label="Twitter">🐦</a>
             <a href="#instagram" aria-label="Instagram">📸</a>
         </div>
+        <p>Email us: <a href="mailto:info@dawah.org" style="color: #FFD700;">info@dawah.org</a></p>
     </footer>
 </body>
 </html>
