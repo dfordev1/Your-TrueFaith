@@ -14,13 +14,14 @@
         body {
             font-family: 'Segoe UI', system-ui, sans-serif;
             line-height: 1.6;
-            color: #000;
-            background: #fff;
+            color: #333;
+            background: #f9f9f9;
         }
 
         .header {
             padding: 1.5rem;
-            border-bottom: 1px solid #eee;
+            border-bottom: 1px solid #ddd;
+            background: #fff;
         }
 
         .nav {
@@ -37,29 +38,42 @@
         }
 
         .nav-links a {
-            color: #000;
+            color: #333;
             text-decoration: none;
             font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #007BFF;
         }
 
         .hero {
             text-align: center;
             padding: 6rem 1rem;
-            border-bottom: 1px solid #eee;
+            border-bottom: 1px solid #ddd;
+            background: linear-gradient(to bottom, #007BFF, #0056b3);
+            color: #fff;
         }
 
         .hero h1 {
-            font-size: 2.5rem;
+            font-size: 2.8rem;
             margin-bottom: 1rem;
         }
 
         .cta-button {
             display: inline-block;
-            border: 2px solid #000;
-            color: #000;
+            border: 2px solid #fff;
+            color: #fff;
             padding: 1rem 2rem;
             text-decoration: none;
             margin-top: 2rem;
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background: #fff;
+            color: #007BFF;
         }
 
         .features {
@@ -73,14 +87,42 @@
 
         .feature-card {
             padding: 2rem;
-            border: 1px solid #eee;
+            border: 1px solid #ddd;
             text-align: center;
+            background: #fff;
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         .footer {
             padding: 2rem;
             text-align: center;
-            border-top: 1px solid #eee;
+            border-top: 1px solid #ddd;
+            background: #f1f1f1;
+        }
+
+        .footer p {
+            margin-bottom: 1rem;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .social-icons a {
+            text-decoration: none;
+            color: #333;
+            font-size: 1.5rem;
+        }
+
+        .social-icons a:hover {
+            color: #007BFF;
         }
 
         @media (max-width: 768px) {
@@ -88,6 +130,7 @@
                 flex-direction: column;
                 gap: 1rem;
             }
+
             .nav-links {
                 flex-direction: column;
                 align-items: center;
@@ -98,7 +141,7 @@
 <body>
     <header class="header">
         <nav class="nav">
-            <h2>Dawah Organization</h2>
+            <h2 aria-label="Dawah Organization">Dawah Organization</h2>
             <div class="nav-links">
                 <a href="#about">About</a>
                 <a href="#resources">Resources</a>
@@ -130,7 +173,12 @@
     </section>
 
     <footer class="footer">
-        <p>&copy; 2025 Dawah Organization</p>
+        <p>&copy; 2025 Dawah Organization. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="#facebook" aria-label="Facebook">🔵</a>
+            <a href="#twitter" aria-label="Twitter">🐦</a>
+            <a href="#instagram" aria-label="Instagram">📸</a>
+        </div>
     </footer>
 </body>
 </html>
